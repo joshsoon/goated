@@ -10,7 +10,8 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color:black;
+    opacity: 0.75;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -45,4 +46,19 @@ body {
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  .goated {
+    color: grey;
+    font-size: 5em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .subtitle {
+    color: grey;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 0px;
+    margin: 0;
   }
