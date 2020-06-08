@@ -27,7 +27,14 @@ body {
 }
   
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #a19c9c;
+}
+
+.openbtn {
+  font-size: 40px;
+  cursor: pointer;
+  color: black;
+  opacity: 0.75;
 }
   
 .sidenav .closebtn {
