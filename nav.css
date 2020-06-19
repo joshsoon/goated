@@ -186,3 +186,47 @@ button {
   background-image: linear-gradient(to bottom left, #7E3EB1,#F80A00,#F7D302);
   color: white;
 }
+
+.icons {
+  text-align: center;
+  margin: 20px;
+  margin-bottom: 10px;
+}
+
+.aboutimage {
+  display: block;
+  margin: auto;
+}
+
+.description {
+  text-align: center;
+}
+
+.quote {
+  margin: 1em;
+  font-size: 1.5em;
+  margin-bottom: -1em;
+}
+
+.author {
+  font-weight: unset;
+  font-size: 1.2em; 
+}
+
+hr { 
+  display: block;
+  margin-top: 1em;
+  margin-bottom: -1em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  width: 300px;
+} 
+
+.photo {
+  width: 670px;
+  height: 400px;
+}
+
+
