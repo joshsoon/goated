@@ -161,7 +161,8 @@ button {
 .fa {
   padding: 20px;
   font-size: 50px;
-  width: 17.5px;
+  width: 12.5px;
+  height: 12.5px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
