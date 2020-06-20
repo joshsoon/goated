@@ -134,6 +134,7 @@ button {
   float: left;
   margin: 5px;
   border-radius: 5%;
+  margin-left: -5px;
 }
 
 .button {
@@ -142,6 +143,7 @@ button {
 
 .row {
   display: flex;
+  align-content: center;
 }
 
 .column {
@@ -212,6 +214,7 @@ button {
 .author {
   font-weight: unset;
   font-size: 1.2em; 
+  margin-bottom: 1em;
 }
 
 hr { 
@@ -228,6 +231,18 @@ hr {
 .photo {
   width: 670px;
   height: 400px;
+}
+
+.aboutimage {
+  margin: 20px;
+  width: 250px;
+  opacity: 0.8;
+  margin-top: -50px;
+}
+
+.smallheader {
+  padding-top: 30px;
+  font-size: 1.5em;
 }
 
 
