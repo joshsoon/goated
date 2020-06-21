@@ -1,84 +1,96 @@
-var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, chD, correct = 0;
-var questions = [
+const questions = [
   {
-      question: "Who is the owner of GoatedBball?",
-      a: "Raghav",
-      b: "Andre",
-      c: "AlanNBAGoat",
-      d: "Niggolas",
-      answer: "B"
-    },
+    id: 1,
+    question: "Who is the owner and founder of GoatedBball?",
+    answer: "Andre Whitehead",
+    options: [
+      "AlanNBAGoat",
+      "Raghav Ganapathy",
+      "Andre Whitehead",
+      "Jayden Buman"
+    ]
+  },
   {
-      question: "Who is the all time leading scorer in the NBA?",
-      a: "Michael Jordan",
-      b: "LeBron James",
-      c: "Kareem Abdul-Jabbar",
-      d: "Kobe Bryant (RIP)",
-      answer: "C"
-    },
+    id: 2,
+    question: "How many all-time three-pointers has Max Guit made?",
+    answer: "2",
+    options: [
+      "0",
+      "1",
+      "2",
+      "5"
+    ]
+  },
   {
-      question: "Which player has the most championship rings?",
-      a: "Wilt Chamberlain",
-      b: "Tim Duncan",
-      c: "Sam Jones",
-      d: "Bill Russell",
-      answer: "D"
-    },
-  {
-      question: "What is Pascal Siakam's nickname?",
-      a: "PP",
-      b: "Spicy P",
-      c: "PSpicy",
-      d: "Marshmallo",
-      answer: "C"
-    },
-  {
-      question: "How many 3-pointers has Max Guit made all-time?",
-      a: "0",
-      b: "1",
-      c: "2",
-      d: "4",
-      answer: "b"
+    id: 3,
+    question: "What is Pascal Siakam's Nickname?",
+    answer: "Spciy P",
+    options: [
+      "Spicy P",
+      "Salty P",
+      "P-Dog",
+      "Marshmallo"
+    ]
   }
-  ];
+];
 
-function get(x){
-  return document.getElementById(x);
-}
-function renderQuestion(){
-  test = get("test");
-  if(pos >= questions.length){
-    test.innerHTML = "<h2>You got "+correct+" of  "+questions.length+" questions correct</h2>";
-    get("test_status").innerHTML = "Test completed";
-    pos = 0;
-    correct = 0;
-    return false;
+let question_count = 0;
+let points = 0;
+
+window.onload = function() {
+  show(question_count);
+
+};
+
+function next() {
+
+   
+  // if the question is last then redirect to final page
+  if (question_count == questions.length - 1) {
+    sessionStorage.setItem("time", time);
+    clearInterval(mytime);
+    location.href = "trivia-end.html";
   }
-  get("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-  
-  question = questions[pos].question;
-  chA = questions[pos].a;
-  chB = questions[pos].b;
-  chC = questions[pos].c;
-  chD = questions[pos].d;
-  test.innerHTML = "<h3>"+question+"</h3>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='A'> "+chA+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='B'> "+chB+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chC+"</label><br>";
-  test.innerHTML += "<label> <input type='radio' name='choices' value='C'> "+chD+"</label><br><br>";
-  test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
-}
-function checkAnswer(){
-  choices = document.getElementsByName("choices");
-  for(var i=0; i<choices.length; i++){
-    if(choices[i].checked){
-      choice = choices[i].value;
-    }
+  console.log(question_count);
+
+  let user_answer = document.querySelector("li.option.active").innerHTML;
+  // check if the answer is right or wrong
+  if (user_answer == questions[question_count].answer) {
+    points += 10;
+    sessionStorage.setItem("points", points);
   }
-  if(choice == questions[pos].answer){
-    correct++;
-  }
-  pos++;
-  renderQuestion();
+  console.log(points);
+
+  question_count++;
+  show(question_count);
 }
-window.addEventListener("load", renderQuestion);
+
+function show(count) {
+  let question = document.getElementById("questions");
+  let [first, second, third, fourth] = questions[count].options;
+
+  question.innerHTML = `
+  <h2>Q${count + 1}. ${questions[count].question}</h2>
+   <ul class="option_group">
+  <li class="option">${first}</li>
+  <li class="option">${second}</li>
+  <li class="option">${third}</li>
+  <li class="option">${fourth}</li>
+</ul> 
+  `;
+  toggleActive();
+}
+
+function toggleActive() {
+  let option = document.querySelectorAll("li.option");
+  for (let i = 0; i < option.length; i++) {
+    option[i].onclick = function() {
+      for (let i = 0; i < option.length; i++) {
+        if (option[i].classList.contains("active")) {
+          option[i].classList.remove("active");
+        }
+      }
+      option[i].classList.add("active");
+    };
+  }
+}
