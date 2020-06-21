@@ -24,7 +24,7 @@ const questions = [
   {
     id: 3,
     question: "What is Pascal Siakam's Nickname?",
-    answer: "Spciy P",
+    answer: "Spicy P",
     options: [
       "Spicy P",
       "Salty P",
