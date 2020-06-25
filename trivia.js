@@ -65,6 +65,50 @@ const questions = [
       "Boston Celtics"
     ]
   },
+  {
+    id: 7,
+    question: "Which team has won the most championships in NBA history?",
+    answer: "Boston Celtics",
+    options: [
+      "Toronto Raptors",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ]
+  },
+  {
+    id: 6,
+    question: "Which team has won the most championships in NBA history?",
+    answer: "Boston Celtics",
+    options: [
+      "Toronto Raptors",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ]
+  },
+  {
+    id: 6,
+    question: "Which team has won the most championships in NBA history?",
+    answer: "Boston Celtics",
+    options: [
+      "Toronto Raptors",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ]
+  },
+  {
+    id: 6,
+    question: "Which team has won the most championships in NBA history?",
+    answer: "Boston Celtics",
+    options: [
+      "Toronto Raptors",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ]
+  },
 ];
 
 let question_count = 0;
