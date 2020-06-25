@@ -300,6 +300,28 @@ hr {
   margin-top: -50px;
 }
 
+.postrow {
+  display: flex;
+}
+
+.columnpost {
+  flex: 33.33%;
+  padding: 5px;
+}
+
+.posts {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.line {
+  margin-bottom: 40px;
+
+  
+}
+
+
+
 
 
 

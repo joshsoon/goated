@@ -29,9 +29,42 @@ const questions = [
       "Spicy P",
       "Salty P",
       "P-Dog",
-      "Marshmallo"
+      "Peppery P"
     ]
-  }
+  },
+  {
+    id: 4,
+    question: "Who is the coach of the Philadelphia 76ers?",
+    answer: "Brett Brown",
+    options: [
+      "Nick Nurse",
+      "Homer Simpson",
+      "Mike Budenholzer",
+      "Brett Brown"
+    ]
+  },
+  {
+    id: 5,
+    question: "Which of these people were not an All-Star in the 2019-20 season?",
+    answer: "Karl-Anthony Towns",
+    options: [
+      "Domantis Sabonis",
+      "Karl-Anthony Towns",
+      "Pascal Siakam",
+      "Devin Booker"
+    ]
+  },
+  {
+    id: 6,
+    question: "Which team has won the most championships in NBA history?",
+    answer: "Boston Celtics",
+    options: [
+      "Toronto Raptors",
+      "Golden State Warriors",
+      "Chicago Bulls",
+      "Boston Celtics"
+    ]
+  },
 ];
 
 let question_count = 0;
