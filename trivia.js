@@ -79,7 +79,7 @@ function next() {
   if (question_count == questions.length - 1) {
     sessionStorage.setItem("time", time);
     clearInterval(mytime);
-    location.href = "trivia-end.html";
+    location.href = "end.html";
   }
   console.log(question_count);
 

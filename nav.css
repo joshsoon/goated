@@ -297,7 +297,9 @@ hr {
 
 .logo {
   float: right;
-  margin-top: -50px;
+  margin-top: -90px;
+  height: 80px;
+  border-radius: 25%;
 }
 
 .postrow {
@@ -316,10 +318,11 @@ hr {
 
 .line {
   margin-bottom: 40px;
-
-  
 }
 
+.homebutton {
+  margin-top: 20px;
+}
 
 
 

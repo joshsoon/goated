@@ -2,10 +2,14 @@
 <html>
 
   <head>
-    <title>GOATEDBBALL | Quizzes</title>
+    <title>GOATEDBBALL | IQ Quiz</title>
     <link rel = "stylesheet" href="nav.css"/>
     <script src = "nav.js" ></script>
     <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+    <link rel = "stylesheet" href="quizzes.css"/>
+    <script src="trivia.js"></script>
+    <script src="userInfo.js"></script>
+    <script src="timer.js"></script>
 </head>
 
 <body>
@@ -34,25 +38,29 @@
   </ul>
 </div>
 
-<div class="container row">
-  <div class="column">
-    <img class="player photo" src="type of player.jpg">
-  </div>
-  <div class="column">
-    <img class="iq photo" src="player iq.jpg">
-  </div>
-</div>
+    <div class="wrapper">
+      <div class="quiz">
+        <div class="quiz_header">
+          <div class="quiz_user">
+            <h4>Trivia Quiz <span class="name"></span></h4>
+          </div>
+          <div class="quiz_timer">
+            <span class="time">00:00</span>
+          </div>
+        </div>
+        <div class="quiz_body">
+          <div id="questions">
+          </div>
 
-<!-- crop the image to make it look better and make them line up--> 
+          <button class="btn-next" onclick="next()">Next Question</button>
+        </div>
+      </div>
+    </div>
 
-<div class="row">
-  <button class="button btn_column" ><span><a href = "iq.html">What's Your Basketball IQ? - Take the Quiz!</a></span></button>
-  <button class="button btn_column" ><span><a href = "trivia.html">How Much Do You Know? - Take the Quiz!</a></span> </button>
-</div>
 
-<div class=footer>
-  <h3 class="footertitle"> © GOATEDBBALL 2020</h1>
-</div>
+    <div class=footer>
+      <h3 class="footertitle"> © GOATEDBBALL 2020</h1>
+    </div>
 
-</body>
-</html> 
+  </body>
+</html>
