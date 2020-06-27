@@ -67,46 +67,46 @@ const questions = [
   },
   {
     id: 7,
-    question: "Which team has won the most championships in NBA history?",
-    answer: "Boston Celtics",
+    question: "When was Giannis Antetokounmpo drafted?",
+    answer: "2013",
     options: [
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Chicago Bulls",
-      "Boston Celtics"
+      "2012",
+      "2014",
+      "2013",
+      "2016"
     ]
   },
   {
-    id: 6,
-    question: "Which team has won the most championships in NBA history?",
-    answer: "Boston Celtics",
+    id: 8,
+    question: "Wilt Chamberlain once scored 100 points in a game. Which player has the second-highest total points in a single game?",
+    answer: "Kobe Bryant",
     options: [
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Chicago Bulls",
-      "Boston Celtics"
+      "Steph Curry",
+      "AlanNBAGoat",
+      "Lebron James",
+      "Kobe Bryant"
     ]
   },
   {
-    id: 6,
-    question: "Which team has won the most championships in NBA history?",
-    answer: "Boston Celtics",
+    id: 9,
+    question: "Which player was inspiration for the current NBA logo?",
+    answer: "Jerry West",
     options: [
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Chicago Bulls",
-      "Boston Celtics"
+      "Jerry West",
+      "Shaquille O'Neal",
+      "Kawhi Leonard",
+      "Oscar Robertson"
     ]
   },
   {
-    id: 6,
-    question: "Which team has won the most championships in NBA history?",
-    answer: "Boston Celtics",
+    id: 10,
+    question: "Who was the latest person to average a triple double in a full season?",
+    answer: "Russell Westbrook",
     options: [
-      "Toronto Raptors",
-      "Golden State Warriors",
-      "Chicago Bulls",
-      "Boston Celtics"
+      "Oscar Robertson",
+      "Russell Westbrook",
+      "Lebron James",
+      "Michael Jordan"
     ]
   },
 ];
