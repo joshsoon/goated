@@ -125,14 +125,12 @@ function next() {
     clearInterval(mytime);
     location.href = "end.html";
   }
-  console.log(question_count);
 
   let user_answer = document.querySelector("li.option.active").innerHTML;
   if (user_answer == questions[question_count].answer) {
     points += 10;
     sessionStorage.setItem("points", points);
   }
-  console.log(points);
 
   question_count++;
   show(question_count);
@@ -153,6 +151,7 @@ function show(count) {
   `;
   toggleActive();
 }
+
 
 function toggleActive() {
   let option = document.querySelectorAll("li.option");
