@@ -97,7 +97,7 @@ const questions = [
     if (question_count == questions.length - 1) {
       sessionStorage.setItem("time", time);
       clearInterval(mytime);
-      location.href = "end.html";
+      location.href = "typa-end.html";
     }
     console.log(question_count);
   
@@ -123,7 +123,7 @@ const questions = [
     question_count++;
     show(question_count);
   }
-  
+
   function show(count) {
     let question = document.getElementById("questions");
     let [first, second, third, fourth] = questions[count].options;
