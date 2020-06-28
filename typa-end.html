@@ -6,9 +6,10 @@
     <link rel = "stylesheet" href="nav.css"/>
     <script src = "nav.js" ></script>
     <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+    <script src="typa.js"></script>
 </head>
 
-<body>
+<body onload="typeOfPlayer()">
   <span class = "openbtn" onclick="openNav()">&#9776; </span>
 
 <div id="mySidenav" class="sidenav">
@@ -39,7 +40,8 @@
            <h3 class="username">Your Results: <span class="name"></span></h3>
            <p class="userpoints">Your score: <span class="points"></span></p>
            <p class="usertime"> Time Taken: <span class="time_taken"></span> seconds</p>
-           
+           <p id="typeOfPlayer"></p>
+
 
 
         </div>

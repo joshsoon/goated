@@ -153,4 +153,24 @@ const questions = [
       };
     }
   }
-  
+
+  function typeOfPlayer() {
+    var text = "";
+         if (points < 90) {
+        text = "You play like Goran Dragic! idk you're alright I guess, pass first point guard";
+      }  else if (points < 120) {
+        text = "You play like Russell Westbrook! Fast and atheletic, you're a triple double machine! But you can't shoot and brick all of your shots.";
+      }  else if (points < 150) {
+        text = "You play like Stephen Curry! Limitless range...";
+      }  else if (points < 180) {
+        text = "You play like Kevin Durant! You sLitHer like a sNaKe around the defense, tall and can shoot.";
+      } else if (points < 220) {
+        text = "You play like LeBron James! Kinda OP at everything.";
+      } else if (points < 250) {
+        text = "You play like Blake Griffin! All you do is dunk.";
+      } else {
+        text = "You play like Anthony Davis! You're tall and get rebounds and dunk.";
+      }
+
+    document.getElementById("typeOfPlayer").innerHTML = text;
+  }
