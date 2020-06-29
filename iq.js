@@ -1,37 +1,94 @@
 const questions = [
     {
       id: 1,
-      question: "Who is the owner and founder of GoatedBball?",
-      answer: "Andre Whitehead",
+      question: "What should Lou Williams do?",
+      answer: "B: Pass to Jamychal Green on the right wing",
       options: [
-        "AlanNBAGoat",
-        "Raghav Ganapathy",
-        "Andre Whitehead",
-        "Jayden Buman"
+        "A: Pass to Montrezl Harrel in the key",
+        "B: Pass to Jamychal Green on the right wing",
+        "C: Pass to Pat Bev up top",
       ]
     },
     {
       id: 2,
-      question: "How many all-time three-pointers has Max Guit made?",
-      answer: "2",
+      question: "What should KCP do?",
+      answer: "C: Pass to Troy Daniels in the right corner",
       options: [
-        "0",
-        "1",
-        "2",
-        "5"
+        "A: Score at the rim and finish",
+        "B: Pass to Dwight Howard in the paint",
+        "C: Pass to Troy Daniels in the right corner",
       ]
     },
     {
       id: 3,
-      question: "What is Pascal Siakam's Nickname?",
-      answer: "Spicy P",
+      question: "What should Lebron do?",
+      answer: "A: Pass to the cutting Troy Daniels",
       options: [
-        "Spicy P",
-        "Salty P",
-        "P-Dog",
-        "Marshmallo"
+        "A: Pass to the cutting Troy Daniels",
+        "B: Shoot the ball",
+        "C: Pass to KCP in the right corner-wing"
       ]
-    }
+    },
+    {
+      id: 4,
+      question: "What should Lebron do in the paint?",
+      answer: "C: Pass to the cutting JaVale McGee",
+      options: [
+        "A: Take advantage of the mis-match and score",
+        "B: Pass to Avery Bradley on the left wing",
+        "C: Pass to the cutting JaVale McGee"
+      ]
+    },
+    {
+      id: 5,
+      question: "What should Fred van Fleet do?",
+      answer: "A: Pass to Kyle Lowry in the left corner",
+      options: [
+        "A: Pass to Kyle Lowry in the left corner",
+        "B: Take the layup and try to score under the rim",
+        "C: Pass to Siakam up top"
+      ]
+    },
+    {
+      id: 6,
+      question: "What should Jrue Holiday do?",
+      answer: "A: Pass to Nicolo Melli on the right wing",
+      options: [
+        "A: Pass to Nicolo Melli on the right wing",
+        "B: Go for the shot or layup",
+        "C: Pass to Kenrich Williams in the right corner"
+      ]
+    },
+    {
+      id: 7,
+      question: "What should Lonzo do?",
+      answer: "C: Pass to Nicolo Melli in the right corner",
+      options: [
+        "A: Pass to Jrue Holiday up top",
+        "B: Drive in and score at the rim",
+        "C: Pass to Nicolo Melli in the right corner"
+      ]
+    },
+    {
+      id: 8,
+      question: "What should Spicy P do?",
+      answer: "C: Drive in to score",
+      options: [
+        "A: Pass to Serge Ibaka on the left wing",
+        "B: Pass to the cutter Terrence Davis III",
+        "C: Drive in to score"
+      ]
+    },
+    {
+      id: 9,
+      question: "What should Terrence Davis III do?",
+      answer: "B: Pass to Norman Powell on the right wing",
+      options: [
+        "A: Pass to Patrick McCaw up top",
+        "B: Pass to Norman Powell on the right wing",
+        "C: Drive in to score"
+      ]
+    },
   ];
   
   let question_count = 0;
@@ -71,8 +128,6 @@ const questions = [
     <li class="option">${first}</li>
     <li class="option">${second}</li>
     <li class="option">${third}</li>
-    <li class="option">${fourth}</li>
-  </ul> 
     `;
     toggleActive();
   }
