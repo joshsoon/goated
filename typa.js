@@ -98,9 +98,7 @@ const questions = [
       sessionStorage.setItem("time", time);
       clearInterval(mytime);
       location.href = "typa-end.html";
-    }
-    console.log(question_count);
-  
+    }  
     let user_answer = document.querySelector("li.option.active").innerHTML;
     if (user_answer == questions[question_count].tenpts) {
       points += 10;
@@ -118,7 +116,6 @@ const questions = [
       points += 40;
       sessionStorage.setItem("points", points);
     }
-    console.log(points);
   
     question_count++;
     show(question_count);
@@ -155,6 +152,7 @@ const questions = [
   }
 
   function typeOfPlayer() {
+    console.log(points);
     var text = "";
          if (points < 90) {
         text = "You play like Goran Dragic! idk you're alright I guess, pass first point guard";
