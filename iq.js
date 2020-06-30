@@ -75,13 +75,13 @@ const questions = [
       answer: "C: Drive in to score",
       options: [
         "A: Pass to Serge Ibaka on the left wing",
-        "B: Pass to the cutter Terrence Davis III",
+        "B: Pass to the cutter Terrence Davis II",
         "C: Drive in to score"
       ]
     },
     {
       id: 9,
-      question: "What should Terrence Davis III do?",
+      question: "What should Terrence Davis II do?",
       answer: "B: Pass to Norman Powell on the right wing",
       options: [
         "A: Pass to Patrick McCaw up top",
