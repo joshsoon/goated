@@ -83,6 +83,20 @@ const questions = [
         "Box out and get boards"
       ]
     },
+    {
+      id: 7,
+      question: "What position do you play?",
+      tenpts: "Guard",
+      twentypts: "Small Forward",
+      thirtypts: "Power Forward",
+      fortypts: "Center",
+      options: [
+        "Guard",
+        "Small Forward",
+        "Power Forward",
+        "Center"
+      ]
+    },
   ];
   
   let question_count = 0;
