@@ -145,13 +145,12 @@ button {
 
 .row {
   display: flex;
-  align-content: center;
 }
 
 .column {
-  flex: 50%;
-  padding: 50px;
-  padding-right: 40px;
+  flex: 33.33%;
+  padding-bottom: 50px;
+  padding-right: 4px;
 }
 
 .btn_column {
@@ -264,9 +263,11 @@ hr {
 } 
 
 .photo {
-  width: 670px;
-  height: 400px;
+  width: 480px;
+  height: 280px;
   opacity: 0.9;
+  padding: 10px;
+  border-radius: 10%;
 }
 
 .aboutimage {
@@ -277,7 +278,7 @@ hr {
 
 .smallheader {
   padding-top: 30px;
-  font-size: 1.5em;
+  font-size: 2em;
 }
 
 .about{
@@ -325,6 +326,14 @@ hr {
 .homebutton {
   margin: 2.6em;
   margin-top: 50px;
+}
+
+.bio {
+  font-weight: normal;
+  padding-right: 200px;
+  padding-left: 200px;
+  font-size: 1.2em;
+  margin-bottom: -100px;
 }
 
 
